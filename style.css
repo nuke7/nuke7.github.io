@@ -22,6 +22,12 @@ a {
     text-decoration: none;
 }
 
+.nav {
+    width: 100%;
+    background-color: #cfcfcf;
+    text-align: center;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -130,4 +136,27 @@ button:active {
 
 .questioncircle:active {
     box-shadow: none;
+}
+
+a {
+    transition: color .4s;
+    color: #265C83;
+}
+
+a:link,
+a:visited {
+    color: #265C83;
+}
+
+a:hover {
+    color: #7FDBFF;
+}
+
+a:active {
+    transition: color .3s;
+    color: #007BE6;
+}
+
+.link {
+    text-decoration: none;
 }
