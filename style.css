@@ -5,8 +5,21 @@
     margin-right: auto;
 }
 
+h1 {
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: right;
+    margin-right: 10px;
+}
+
 .title {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
