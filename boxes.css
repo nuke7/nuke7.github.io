@@ -1,22 +1,31 @@
-.wrapper {
-    /*width: 50%;
-    margin: auto;*/
-}
-
 .blue {
     width: 50px;
     height: 50px;
     background-color: rgb(68, 133, 242);
     margin: 7px;
-    /*padding-bottom: 5%;*/
-    display: inline-block;
 }
 
 .top {
-    /*display: flex;*/
-    width: 50%;
-    height: 50px;
+    display: flex;
+    width: 600px;
     border: 2px solid rgb(68, 133, 242);
     margin: auto;
-    padding: 7px;
+    padding: 15px;
+}
+
+.purple {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(100, 53, 120);
+    margin: 7px;
+}
+
+.bot {
+    display: flex;
+    width: 600px;
+    border: 2px solid rgb(68, 133, 242);
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(255, 98, 71);
+    margin-top: 15px;
 }
