@@ -1,0 +1,16 @@
+p {
+    width: 300px;
+    font-family: 'Adamina', serif;
+    border: solid 2px black;
+    padding: 20px;
+    margin: 0px;
+    border-top: none;
+}
+
+.last {
+    border-bottom: none;
+}
+
+p:hover {
+    background-color: orange;
+}
