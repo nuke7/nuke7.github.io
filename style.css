@@ -23,9 +23,21 @@ a {
 }
 
 .nav {
-    width: 100%;
-    background-color: #cfcfcf;
+    width: 55px;
     text-align: center;
+    margin: auto;
+    padding: 5px;
+    background-color: lightgreen;
+    color: white;
+    margin-top: 10px;
+}
+
+.nav:hover {
+    box-shadow: grey 0 0 4px 1px;
+}
+
+.nav:active {
+    box-shadow: none;
 }
 
 body {
