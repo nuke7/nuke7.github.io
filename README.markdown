@@ -1,5 +1,6 @@
-# Awesome Landing Page
+# Landing Page
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/marton-gombos/pen/abvdmmz](https://codepen.io/marton-gombos/pen/abvdmmz).
+Example works in html/css
+ Original URL: [https://codepen.io/marton-gombos/pen/abvdmmz](https://codepen.io/marton-gombos/pen/abvdmmz).
 
 
