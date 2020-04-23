@@ -1,0 +1,27 @@
+h1 {
+    background-color: rgb(158, 6, 6);
+    color: seashell;
+    text-align: center;
+}
+
+span {
+    font-style: bold;
+    font-size: 20px;
+    background-color: lime;
+    padding: 5px;
+}
+
+.blue {
+    background-color: mediumslateblue;
+    width: fit-content;
+}
+
+h2 {
+    width: 400px;
+    text-align: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
