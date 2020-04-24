@@ -1,0 +1,221 @@
+.container {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    display: flex;
+    background-color: lightgreen;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    /*width: 100%;*/
+    margin: auto;
+    /*position: fixed;*/
+    top: 0px;
+    z-index: 100;
+    /*padding-bottom: 10px;*/
+    padding-top: 5px;
+    margin-top: -10px;
+}
+
+
+/*label {
+    margin-left: 25%;
+}*/
+
+#terms {
+    margin-left: 25%;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    width: 55px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    background-color: lightgreen;
+    color: white;
+    margin-top: 10px;
+}
+
+.nav:hover {
+    box-shadow: grey 0 0 4px 1px;
+}
+
+.nav:active {
+    box-shadow: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    background: lightgreen;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 5px 3px grey;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 4px 2px grey;
+}
+
+.card:active {
+    box-shadow: none;
+}
+
+#email {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    border: solid #cfcfcf thin;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+button {
+    display: block;
+    width: 49%;
+    color: white;
+    background: lightgreen;
+    border: 0;
+    border-radius: 2px;
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+button:hover {
+    box-shadow: grey 0px 0px 4px 1px;
+}
+
+#mce-EMAIL {
+    margin-left: 25%;
+    align-content: center;
+    width: 49%;
+    padding: 5px;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.newsletter-box {
+    color: grey;
+    border: solid #cfcfcf 2px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.newsletter-box h3 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#terms {
+    position: relative;
+    top: 1px;
+    left: 0px;
+    /*margin: auto;*/
+}
+
+.closex {
+    position: absolute;
+    top: 0px;
+    right: 1%;
+    cursor: pointer;
+}
+
+.questioncircle {
+    color: white;
+    font-size: 70px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: lightgreen;
+    border-radius: 50px;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    box-shadow: 0px 0px 5px 3px grey;
+    cursor: pointer;
+}
+
+.questioncircle:hover {
+    box-shadow: 0px 0px 4px 2px grey;
+}
+
+.questioncircle:active {
+    box-shadow: none;
+}
+
+a {
+    transition: color .4s;
+    color: #265C83;
+}
+
+a:link,
+a:visited {
+    color: #265C83;
+}
+
+a:hover {
+    color: #7FDBFF;
+}
+
+a:active {
+    transition: color .3s;
+    color: #007BE6;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img {
+    width: 128px;
+    height: 128px;
+}
