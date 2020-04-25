@@ -250,7 +250,7 @@ blockquote {
     font-size: 30px;
     color: white;
     max-width: 600px;
-    width: 90%;
+    width: 97%;
     background-color: #222;
     /*margin: auto;*/
     padding: 20px 40px 20px 45px;
@@ -260,6 +260,7 @@ blockquote {
     /*text-align: center;*/
     box-sizing: border-box;
     line-height: 1.5em;
+    margin-left: 10px;
 }
 
 blockquote:hover {
