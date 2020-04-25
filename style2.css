@@ -216,7 +216,7 @@ a:visited {
 }
 
 a:hover {
-    color: #7FDBFF;
+    color: rgb(197, 239, 255);
 }
 
 a:active {
