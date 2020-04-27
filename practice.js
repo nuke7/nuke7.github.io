@@ -56,6 +56,7 @@ let word = "cool";
 let submit = () => {
     var color = document.getElementById("color").value;
     var number = document.getElementById("number").value;
+    var word = document.getElementById("word").value;
     if (color == "purple") {
         $('.north').css("background-color", color);
     } else {
@@ -65,6 +66,11 @@ let submit = () => {
         $('.east').text("whoah, that's a big nubmer!");
     } else {
         $('.east').text("just a regular number pls");
+    };
+    if (word == "cool") {
+        $('.south').text("Power of DOM");
+    } else {
+        $('.west').text("Power of DOM");
     }
 };
 
