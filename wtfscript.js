@@ -26,3 +26,5 @@ $('.card').click(function() {
         }
     })
 });
+
+console.log("Marton Gombos");
