@@ -58,6 +58,8 @@ let submit = () => {
     var number = document.getElementById("number").value;
     if (color == "purple") {
         $('.north').css("background-color", color);
+    } else {
+        $('.north').text("only purple pls");
     };
     if (number > 100) {
         $('.east').text("whoah, that's a big nubmer!");
@@ -65,3 +67,5 @@ let submit = () => {
         $('.east').text("just a regular number pls");
     }
 };
+
+$('#submit').click(submit);
