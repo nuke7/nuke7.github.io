@@ -21,7 +21,7 @@ let getInput = () => {
     if ($('li').length < 9) {
         $('ul').append('<li> My name is ' + username + '</li>');
     }
-    alert('new username is: ' + username);
+    alert('oh, hi ' + username + '!');
 };
 
 /*let addButtonFunction = () => {
