@@ -11,3 +11,18 @@ $(".closex").click(function() {
 $(".nav").on("mouseover", function() {
     $(".newsletter-box").show(700);
 });
+
+$('.dialog').hide(0);
+
+$('.card').click(function() {
+    $(".dialog").dialog({
+        show: {
+            effect: "blind",
+            duration: 1000,
+        },
+        hide: {
+            effect: "explode",
+            duration: 1000,
+        }
+    })
+});
