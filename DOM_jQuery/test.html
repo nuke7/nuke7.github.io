@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        button {
+            margin: 15px;
+            padding: 5px;
+        }
+        
+        input {
+            margin: 10px;
+        }
+        
+        .button-wrapper1 {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 50%;
+        }
+        
+        label {
+            margin-left: 20px;
+        }
+    </style>
+
+    <title>jQuery testing</title>
+
+</head>
+
+<body>
+    <h1> Building things is fun </h1>
+    <h2> Hello from Greenfox </h2>
+    <p> lorem ipsum dolor et stb meg minden lorem ipsum dolor et stb meg minden lorem ipsum dolor et stb meg minden lorem ipsum dolor et stb meg minden lorem ipsum dolor et stb meg minden lorem ipsum dolor et stb meg minden lorem ipsum dolor et stb meg minden
+        lorem ipsum dolor et stb meg minden </p>
+
+    <h2> Let's see a list </h2>
+    <ul>
+        <li>This is</li>
+        <li>a very nice</li>
+        <li>list</li>
+        <li>on the first level</li>
+        <ol>
+            <li class="underlined_colored"><span>but it</span></li>
+            <li class="underlined_colored"><span>scan go</span></li>
+            <li class="underlined_colored"><span>deeper</span></li>
+            <li class="underlined"><span>and notice I have roman numbering!</span></li>
+        </ol>
+        <li>back to normal</li>
+    </ul>
+
+    <div class="button-wrapper1">
+        <button id="click-me">Click Me</button><br>
+        <button id="reset"> Reset Click</button><br>
+        <button id="color-change"> Prettify </button> <br>
+    </div>
+
+    <label for="color">Button color:</label>
+    <input type="text" id="color" name="color" value="blue">
+    <button id="colorify">Colorify</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="test.js"></script>
+
+</body>
+
+</html>
