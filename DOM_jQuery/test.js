@@ -43,9 +43,8 @@ $('#color-change').click(change);
 var count = 0;
 
 function countPlus() {
-    //var count = 0;
     count += 1;
-    //document.getElementById("count").innerHTML = count;
+    $('#colorify').text('Colorify pushed: ' + count, ' times');
 };
 
 let colorify = () => {
