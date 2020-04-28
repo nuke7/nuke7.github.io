@@ -40,9 +40,21 @@ let change = () => {
 
 $('#color-change').click(change);
 
-let colorify = () => {
-    var color = document.getElementById("color").value;
-    $('button').css('background-color', color);
+var count = 0;
+
+function countPlus() {
+    //var count = 0;
+    count += 1;
+    //document.getElementById("count").innerHTML = count;
 };
 
-$('#colorify').click(colorify);
+let colorify = () => {
+    var color = document.getElementById("color").value;
+    if (count <= 2) {
+        $('button').css('background-color', color);
+    } else {
+        $('body').css('background-color', color);
+    };
+};
+
+$('#colorify').click(colorify).click(countPlus);
