@@ -1,0 +1,14 @@
+body {
+    /*background-color: #bc8f8f;*/
+    font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+}
+
+button {
+    border-radius: 10%;
+    height: 2.1em;
+}
+
+h3 {
+    text-transform: uppercase;
+}

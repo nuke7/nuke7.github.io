@@ -44,7 +44,7 @@ var count = 0;
 
 function countPlus() {
     count += 1;
-    $('#colorify').text('Colorify pushed: ' + count, ' times');
+    $('#colorify').text('Colorify pushed: ' + count + ' times');
 };
 
 let colorify = () => {
