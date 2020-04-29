@@ -1,7 +1,17 @@
 body {
     /*background-color: #bc8f8f;*/
     font-family: 'Roboto', sans-serif;
-    max-width: 600px;
+    max-width: 700px;
+}
+
+.todos {
+    max-width: 50%;
+    height: 150px;
+}
+
+ul {
+    list-style-type: square;
+    cursor: pointer;
 }
 
 button {
@@ -9,6 +19,12 @@ button {
     height: 2.1em;
 }
 
+h1 {
+    text-align: center;
+    margin: 25px;
+}
+
 h3 {
     text-transform: uppercase;
+    text-align: center;
 }
