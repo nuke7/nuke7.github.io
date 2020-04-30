@@ -1,7 +1,10 @@
 let getInput = () => {
     var todo = document.getElementById("todo").value;
     if ($('li').length < 5) {
-        $('ul').append('<li id="list-item">' + todo + '</li>'); //onclick="done(this)"
+        if (todo != "") {
+            $('ul').append('<li id="list-item">' + todo + '</li>');
+        }
+
         /*$('#todo-list li').attr('id', function(i) {
             return 'li' + (i + 1);*/
     } else {
