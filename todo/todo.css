@@ -9,6 +9,11 @@ body {
     height: 50%;
 }
 
+li {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
 .line {
     text-decoration: line-through;
     color: grey;
@@ -32,4 +37,11 @@ h1 {
 h3 {
     text-transform: uppercase;
     text-align: center;
+}
+
+.remove-button {
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: auto;
 }

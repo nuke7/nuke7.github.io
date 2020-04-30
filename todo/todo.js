@@ -23,6 +23,14 @@ $('li:last-child').click((event) => {
     // $(this).toggleClass('line');
 });
 
+let removeButtonFunction = () => {
+    if ($('li').length > 0) {
+        $('li:first-child').remove();
+    }
+};
+
+$('#remove-b').click(removeButtonFunction);
+
 
 /*let done = () => {*/
 /*var lis = document.getElementById('list-item')*/
