@@ -9,6 +9,11 @@ body {
     height: 150px;
 }
 
+.line {
+    text-decoration: line-through;
+    color: grey;
+}
+
 ul {
     list-style-type: square;
     cursor: pointer;
