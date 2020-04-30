@@ -18,10 +18,14 @@ let username = document.getElementById("username").value;
 
 let getInput = () => {
     var username = document.getElementById("username").value;
-    if ($('li').length < 9) {
-        $('ul').append('<li> My name is ' + username + '</li>');
+    if ($('li').length < 7) {
+        if (username != "") {
+            $('ul').append('<li> My name is ' + username + '</li>');
+            alert('oh, hi ' + username + '!');
+            $("input").val("");
+        } else { alert("that's not a username") }
     }
-    alert('oh, hi ' + username + '!');
+
 };
 
 /*let addButtonFunction = () => {
