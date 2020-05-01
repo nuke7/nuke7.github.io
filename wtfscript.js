@@ -18,11 +18,11 @@ $('.card').click(function() {
     $(".dialog").dialog({
         show: {
             effect: "blind",
-            duration: 1000,
+            duration: 700,
         },
         hide: {
             effect: "explode",
-            duration: 1000,
+            duration: 700,
         }
     })
 });
