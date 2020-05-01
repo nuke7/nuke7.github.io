@@ -34,6 +34,12 @@ let removeButtonFunction = () => {
 
 $('#remove-b').click(removeButtonFunction);
 
+let showFunction = () => {
+    $('li').show(450);
+}
+
+$('#show-c').click(showFunction);
+
 
 /*let done = () => {*/
 /*var lis = document.getElementById('list-item')*/
