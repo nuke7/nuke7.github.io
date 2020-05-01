@@ -5,7 +5,7 @@ let getInput = () => {
             $('ul').append("<li>" + todo + "</li>");
             $('li:last-child').click((event) => {
                 $(event.target).toggleClass('line');
-                $(event.target).hide(400);
+                $(event.target).delay(450).hide(450);
             });
             $('input').val('');
         } else {
@@ -21,7 +21,7 @@ $('#todo-button').click(getInput);
 $('li:last-child').click((event) => {
     // $(this).siblings().removeClass('underline');
     $(event.target).toggleClass('line');
-    $(event.target).hide(400);
+    $(event.target).delay(450).hide(450);
     // $(this).toggleClass('line');
 });
 

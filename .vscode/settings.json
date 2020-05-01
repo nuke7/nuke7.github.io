@@ -1,5 +1,6 @@
 {
     "cSpell.ignoreWords": [
         "tarkin"
-    ]
+    ],
+    "discord.detailsEditing": "Editing {gitreponame}"
 }
