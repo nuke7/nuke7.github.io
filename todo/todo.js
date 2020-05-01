@@ -4,7 +4,8 @@ let getInput = () => {
         if (todo != "") {
             $('ul').append("<li>" + todo + "</li>");
             $('li:last-child').click((event) => {
-                $(event.target).toggleClass('line')
+                $(event.target).toggleClass('line');
+                $(event.target).hide(400);
             });
             $('input').val('');
         } else {
@@ -20,12 +21,14 @@ $('#todo-button').click(getInput);
 $('li:last-child').click((event) => {
     // $(this).siblings().removeClass('underline');
     $(event.target).toggleClass('line');
+    $(event.target).hide(400);
     // $(this).toggleClass('line');
 });
 
 let removeButtonFunction = () => {
     if ($('li').length > 0) {
-        $('li:first-child').remove();
+        $('li').remove();
+        /*$('li:first-child').slideUp(400);*/
     }
 };
 
