@@ -51,9 +51,11 @@ let colorify = () => {
     var color = document.getElementById("color").value;
     if (count <= 2) {
         $('button').css('background-color', color);
+        console.log(color);
     } else {
         $('body').css('background-color', color);
     };
 };
 
 $('#colorify').click(colorify).click(countPlus);
+//console.log($(`#color`).val());
