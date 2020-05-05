@@ -268,3 +268,9 @@ blockquote:hover {
     background-color: pink;
     cursor: pointer;
 }
+
+blockquote:active {
+    color: #222;
+}
+
+;
