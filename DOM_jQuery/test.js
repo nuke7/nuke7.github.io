@@ -48,12 +48,12 @@ function countPlus() {
 };
 
 let colorify = () => {
-    var color = document.getElementById("color").value;
+    //let color = document.getElementById("color").value;
     if (count <= 2) {
-        $('button').css('background-color', color);
+        $('button').css('background-color', $('#color').val());
         console.log(color);
     } else {
-        $('body').css('background-color', color);
+        $('body').css('background-color', $('#color').val());
     };
 };
 
