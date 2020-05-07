@@ -1,0 +1,27 @@
+body {
+    max-width: 1280px;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#gameArea {
+    width: 50%;
+    margin: auto;
+    right: 5%;
+    margin-top: -30px;
+    text-align: center;
+}
+
+#result {
+    width: 50%;
+    margin: auto;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
