@@ -26,3 +26,14 @@ body {
     font-size: 2em;
     text-align: center;
 }
+
+#play {
+    border-radius: 25%;
+    height: 2em;
+    width: 100px;
+}
+
+input,
+button {
+    margin-top: 10px;
+}

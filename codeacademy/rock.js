@@ -60,7 +60,11 @@ function playGame() {
     console.log("The computer's choice is: " + computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
     document.getElementById("result").innerHTML = determineWinner(userChoice, computerChoice);
-
+    $('#userInput').val('');
 };
+
+function clearInput() {
+    $('this').val('')
+}
 
 $('#play').click(playGame);
