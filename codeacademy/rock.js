@@ -1,7 +1,7 @@
 function getUserChoice() {
     let Input = $('#userInput').val().toLowerCase();
     //Input = Input.toLowerCase();
-    if (Input === 'rock' || Input === 'paper' || Input === 'scissors') {
+    if (Input === 'rock' || Input === 'paper' || Input === 'scissors' || Input === 'flamethrower') {
         console.log(Input);
         return Input;
 
