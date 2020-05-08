@@ -54,13 +54,17 @@ function determineWinner(userChoice, computerChoice) {
 function playGame() {
     let userChoice = getUserChoice();
     let computerChoice = getComputerChoice();
-    $('#result').hide().delay(540).show(540);
-    document.getElementById("gameArea").innerHTML = "<h1> Game Results </h1> <h3>Player Choice is: " + userChoice + "</h3> <h3> Computer Choice is: " + computerChoice + "</h3>";
-    console.log("Your choice is: " + userChoice);
-    console.log("The computer's choice is: " + computerChoice);
-    console.log(determineWinner(userChoice, computerChoice));
-    document.getElementById("result").innerHTML = determineWinner(userChoice, computerChoice);
-    $('#userInput').val('');
+    if (userChoice === 'rock' || userChoice === 'paper' || userChoice === 'scissors' || userChoice === 'flamethrower') {
+        $('#result').hide().delay(540).show(540);
+        document.getElementById("gameArea").innerHTML = "<h1> Game Results </h1> <h3>Player Choice is: " + userChoice + "</h3> <h3> Computer Choice is: " + computerChoice + "</h3>";
+        console.log("Your choice is: " + userChoice);
+        console.log("The computer's choice is: " + computerChoice);
+        console.log(determineWinner(userChoice, computerChoice));
+        document.getElementById("result").innerHTML = determineWinner(userChoice, computerChoice);
+        $('#userInput').val('');
+    } else {
+        $('#userInput').val('');
+    }
 };
 
 function clearInput() {
