@@ -37,3 +37,10 @@ input,
 button {
     margin-top: 10px;
 }
+
+.wtfball {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+}
