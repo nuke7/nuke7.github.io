@@ -47,7 +47,7 @@ function countPlus() {
     $('#colorify').text('Colorify pushed: ' + count + ' times');
 };
 
-let colorify = () => {
+function colorify() {
     //let color = document.getElementById("color").value;
     if (count <= 2) {
         $('button').css('background-color', $('#color').val());

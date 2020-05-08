@@ -1,4 +1,4 @@
-let userName = $("#name").val;
+let userName = $("#name").val();
 
 userName ? console.log('Hello ' + userName + '!') :
     console.log('Hello!');
