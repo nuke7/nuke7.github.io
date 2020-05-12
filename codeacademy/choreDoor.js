@@ -39,10 +39,10 @@ function playDoor(door) {
 function gameOver(status) {
     if (status === 'win') {
         startButton.innerHTML = "You win! Play again?";
-        $('.door-row').delay(2000).toggle(850);
+        $('.door-row').delay(2500).toggle(850);
     } else {
         startButton.innerHTML = "Game Over! Play again?";
-        $('.door-row').delay(2000).toggle(850);
+        $('.door-row').delay(2500).toggle(850);
     }
     currentlyPlaying = false;
 };
