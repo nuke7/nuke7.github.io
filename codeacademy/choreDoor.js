@@ -8,6 +8,8 @@ let openDoor3;
 const startButton = document.getElementById('start');
 let currentlyPlaying = true;
 
+$('.door-row').hide();
+
 function isBot(door) {
     if (door.src === botDoorPath) {
         return true;
@@ -37,8 +39,10 @@ function playDoor(door) {
 function gameOver(status) {
     if (status === 'win') {
         startButton.innerHTML = "You win! Play again?";
+        $('.door-row').delay(2000).toggle(850);
     } else {
         startButton.innerHTML = "Game Over! Play again?";
+        $('.door-row').delay(2000).toggle(850);
     }
     currentlyPlaying = false;
 };
@@ -77,6 +81,7 @@ function startRound() {
     doorImage3.src = closedDoorPath;
     currentlyPlaying = true;
     startButton.innerHTML = "Good Luck!";
+    $('.door-row').show(500);
     randomChoreDoorGenerator();
 };
 
@@ -84,6 +89,7 @@ startButton.onclick = () => {
     if (currentlyPlaying === false) {
         startRound();
     }
+    $('.door-row').show(700);
 };
 
 
@@ -104,5 +110,3 @@ randomChoreDoorGenerator = () => {
         openDoor1 = spaceDoorPath;
     }
 };
-
-startRound();
