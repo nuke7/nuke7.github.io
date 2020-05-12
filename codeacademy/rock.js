@@ -83,6 +83,7 @@ $('#userInput').keypress(function(event) {
 
 let userName = $("#name").val();
 
+
 $('.wtfball').hide(0);
 
 userName ? console.log('Hello ' + userName + '!') :
