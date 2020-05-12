@@ -8,6 +8,11 @@ let openDoor3;
 const startButton = document.getElementById('start');
 let currentlyPlaying = true;
 
+const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
+const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
+const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
+const closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg";
+
 $('.door-row').hide();
 
 function isBot(door) {
@@ -48,10 +53,7 @@ function gameOver(status) {
 };
 
 
-const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
-const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
-const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
-const closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg";
+
 
 doorImage1.onclick = () => {
     if (isClicked(doorImage1) === false && currentlyPlaying === true) {
