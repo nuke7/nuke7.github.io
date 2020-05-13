@@ -11,7 +11,7 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 const startButton = document.getElementById('start');
-let currentlyPlaying = true;
+let currentlyPlaying = false;
 
 
 
