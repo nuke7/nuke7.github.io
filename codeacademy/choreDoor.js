@@ -59,21 +59,42 @@ function gameOver(status) {
 
 doorImage1.onclick = () => {
     if (isClicked(doorImage1) === false && currentlyPlaying === true) {
-        doorImage1.src = openDoor1;
+        let choreDoor = Math.floor(Math.random() * numClosedDoors);
+        if (choreDoor === 0) {
+            doorImage1.src = botDoorPath;
+        } else if (choreDoor === 1) {
+            doorImage1.src = spaceDoorPath;
+        } else if (choreDoor === 2) {
+            doorImage1.src = beachDoorPath;
+        }
         playDoor(doorImage1);
     }
 };
 
 doorImage2.onclick = () => {
     if (isClicked(doorImage2) === false && currentlyPlaying === true) {
-        doorImage2.src = openDoor2;
+        let choreDoor = Math.floor(Math.random() * numClosedDoors);
+        if (choreDoor === 0) {
+            doorImage2.src = botDoorPath;
+        } else if (choreDoor === 1) {
+            doorImage2.src = beachDoorPath;
+        } else if (choreDoor === 2) {
+            doorImage2.src = beachDoorPath;
+        }
         playDoor(doorImage2);
     }
 };
 
 doorImage3.onclick = () => {
     if (isClicked(doorImage3) === false && currentlyPlaying === true) {
-        doorImage3.src = openDoor3;
+        let choreDoor = Math.floor(Math.random() * numClosedDoors);
+        if (choreDoor === 0) {
+            doorImage3.src = botDoorPath;
+        } else if (choreDoor === 1) {
+            doorImage3.src = spaceDoorPath;
+        } else if (choreDoor === 2) {
+            doorImage3.src = beachDoorPath;
+        }
         playDoor(doorImage3);
     }
 };
