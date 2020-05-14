@@ -79,7 +79,7 @@ doorImage2.onclick = () => {
         } else if (choreDoor === 1) {
             doorImage2.src = beachDoorPath;
         } else if (choreDoor === 2) {
-            doorImage2.src = beachDoorPath;
+            doorImage2.src = spaceDoorPath;
         }
         playDoor(doorImage2);
     }
