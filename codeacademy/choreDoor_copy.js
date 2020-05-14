@@ -86,7 +86,7 @@ function startRound() {
     currentlyPlaying = true;
     startButton.innerHTML = "Good Luck!";
     $('.door-row').show(500);
-    //randomChoreDoorGenerator();
+    randomChoreDoorGenerator();
 };
 
 startButton.onclick = () => {
@@ -98,7 +98,7 @@ startButton.onclick = () => {
 
 
 
-/*randomChoreDoorGenerator = () => {
+randomChoreDoorGenerator = () => {
     let choreDoor = Math.floor(Math.random() * numClosedDoors);
     if (choreDoor === 0) {
         openDoor1 = botDoorPath;
@@ -113,4 +113,4 @@ startButton.onclick = () => {
         openDoor2 = beachDoorPath;
         openDoor1 = spaceDoorPath;
     }
-};*/
+};

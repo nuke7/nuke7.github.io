@@ -12,6 +12,19 @@ img {
     overflow: hidden;
 }
 
+#img-rule,
+#img-faith,
+#img-master {
+    width: 150%;
+    border-radius: 5px;
+}
+
+.ui-dialog-titlebar {
+    background-color: whitesmoke;
+    width: 150%;
+    border-radius: 5%;
+}
+
 .content1 {
     display: flex;
     align-content: center;

@@ -181,6 +181,18 @@ button:active {
     cursor: pointer;
 }
 
+#placeholder {
+    width: 150%;
+    height: 150%;
+}
+
+.ui-dialog-titlebar {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    width: 150%;
+    text-align: center;
+}
+
 .questioncircle {
     color: white;
     font-size: 70px;
