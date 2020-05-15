@@ -28,6 +28,17 @@ let getInput = () => {
 
 };
 
+let bekezdes1 = document.getElementById("bekezdes");
+
+$("h2").mouseover(function() {
+        $(event.target).css("width", "100%") //css("transition", "width", "2s", "ease");
+        console.log(event.target)
+    })
+    .mouseout(function() {
+        $(this).css("width", "50%");
+        console.log(this);
+    });
+
 /*let addButtonFunction = () => {
     if ($('li').length < 7) {
         $('ul').append('<li> My name is ' + username + '</li>');
