@@ -38,14 +38,19 @@
         body {
             max-width: 650px;
             background-image: url(images/hoth3.jpg);
-            background-repeat: repeat;
-            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
         }
         
         .transbox {
             background-color: rgba(255, 255, 255, 0.7);
             margin: 20px;
             padding: 10px;
+        }
+        
+        #img-rule {
+            width: 150%;
+            height: 150%;
         }
     </style>
 </head>
@@ -68,15 +73,23 @@
             <li>General help and front-desk retail operations at the junk shop, second hand droid parts, mechanical / droid repair services;</li>
             <li>Designed and piloted custom-built Podracer, ran track-side operations for the podracing team;</li>
         </ul>
-        <a href="https://i.imgur.com/7zuhzY7.jpg" target="_blank">
-            <blockquote>
+        <a>
+            <blockquote id="rule">
                 <p>Together, We can rule the Galaxy</p>
             </blockquote>
+            <div id="dialog-rule" title="I am the master ">
+                <img id="img-rule" src="images/rule.jpg" alt="I am the master" />
+
+            </div>
         </a>
         <a href="./index.html">
             <h2>Back</h2>
         </a>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="wtfscript.js"></script>
 </body>
 
 </html>

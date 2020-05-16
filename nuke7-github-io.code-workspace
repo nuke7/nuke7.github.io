@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"discord.detailsEditing": " {totallines} lines"
+		"discord.detailsEditing": "Editing {workspace} ",
+		"discord.lowerDetailsEditing": "and {totallines} lines"
 	}
 }

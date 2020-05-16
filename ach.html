@@ -26,14 +26,19 @@
         body {
             max-width: 650px;
             background-image: url(images/hoth4.jpg);
-            background-repeat: repeat;
-            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
         }
         
         .transbox {
             background-color: rgba(255, 255, 255, 0.5);
             margin: 20px;
             padding: 10px;
+        }
+        
+        #img-testing {
+            width: 150%;
+            height: 150%;
         }
     </style>
 </head>
@@ -54,15 +59,27 @@
         <p class="achievement">During my tenure as a Supreme Imperial Fleet Commander I was in charge of large capital construction projects for the Deep Space Fleet. Performed acceptance testing of the DS1 SuperLaser in 0 BBY by annihilating Alderaan - a terrestrial class
             planet in the Core Worlds region. Successfully tripled the deep space fire power of the imperial fleet in accordance with the Tarkin Doctrine before losing both projects to run-away photon torpedoes.</p> <br>
 
-        <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Dv2zeaU7egxUA_rVv07fmQHaFj%26pid%3DApi&f=1" target="_blank">
-            <blockquote>
+        <a>
+            <blockquote id="faith">
                 <p>I find your lack of faith <br> disturbing.</p>
             </blockquote>
         </a>
+
+        <div id="dialog-faith" title="Lack of faith ">
+            <img id="img-testing" src="images/testing.jpg" alt="I find your lack of faith " />
+
+        </div>
+
         <a href="./index.html">
             <h2>Back</h2>
         </a>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="wtfscript.js"></script>
+
 </body>
 
 </html>
