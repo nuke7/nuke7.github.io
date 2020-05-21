@@ -247,6 +247,15 @@ img {
     height: 128px;
 }
 
+#back1 {
+    width: 32px;
+    height: 32px;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
 
 /*blockquote::before {
     content: '\201C';
