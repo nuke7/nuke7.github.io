@@ -49,13 +49,15 @@ a {
 }
 
 .nav {
-    width: 55px;
+    max-width: 330px;
     text-align: center;
     margin: auto;
-    padding: 5px;
+    padding: 0px;
     background-color: lightgreen;
     color: white;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 1.5em;
+    right: 5%;
 }
 
 .nav:hover {
