@@ -14,6 +14,10 @@
             color: #265C83;
         }
         
+        button {
+            margin-top: 30px;
+        }
+        
         a:link,
         a:visited {
             color: #265C83;
@@ -52,62 +56,98 @@
             margin-bottom: 30px;
         }
         
-        img {
+        #door1 {
             height: 160px;
+        }
+        
+        #rock1 {
+            width: 85%;
+        }
+        
+        #rock1:hover {
+            width: 90%;
+        }
+        
+        #anakin1 {
+            width: 85%;
+        }
+        
+        #anakin1:hover {
+            width: 90%;
         }
         
         .card {
             margin-top: 20px;
+        }
+        
+        #door1:hover {
+            height: 175px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-
-        <div class="jumbotron" aria-expanded="false" aria-controls="jack" data-toggle="collapse" href="#jack">
-            <h1>
-                Some of the stuff I made
-            </h1>
+        <div class="jumbotron jumbotron-fluid" style="background:url(./images/background1.jpg) no-repeat; background-size: cover;">
+            <div class="bg-secondary text-center my-5 py-3" aria-expanded="false" aria-controls="jack" data-toggle="collapse" href="#jack">
+                <h1>
+                    Some of the stuff I made
+                </h1>
+            </div>
         </div>
         <h3 class="collapse" id="jack">this the story of <a href="https://youtu.be/GI6CfKcMhjY">Captain Jack Sparrow</a></h3>
 
         <div class="row">
-            <div class="col text-center">
+            <div class="col-md-4 text-center">
                 <button class="btn btn-outline-info" aria-expanded="false" aria-controls="seedSpecial" data-toggle="collapse" href="#seedSpecial">
-                Fun Guess Game
+                Fun Guessing Game
               </button>
+
                 <div class="card collapse" id="seedSpecial">
-                    <a href="./codeacademy/choreDoor.html" target="_blank"><img class="card-img-top" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" alt="closed door image"></a>
+                    <a href="./codeacademy/choreDoor.html" target="_blank"><img class="card-img-top" id="door1" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" alt="closed door image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Chore Door Bot Game</h5>
                         <p class="card-text">A quick and fun random game.</p>
-                        <a href="./codeacademy/choreDoor.html" target="_blank" class="card-link">ChoreDoor</a>
+
                     </div>
                 </div>
             </div>
-            <div class="col text-center">
-                <button class="btn btn-outline-info" type="button" ria-expanded="false" aria-controls="collapseExample" data-toggle="collapse" href="#collapseExample">
-                Second example button 
+            <div class="col-md-4 text-center">
+                <button class="btn btn-outline-info" type="button" ria-expanded="false" aria-controls="rock" data-toggle="collapse" href="#rock">
+                Rock, paper, scissors 
               </button>
 
-                <p class="collapse" id="collapseExample">
-                    This content's visibility gets toggled
-                </p>
+                <div class="card collapse" id="rock">
+                    <a href="./codeacademy/rock.html" target="_blank"><img class="card-img-top" id="rock1" src="./images/RPS.png" alt="rock paper scissors image"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Rock, Paper, Scissors Game</h5>
+                        <p class="card-text">A quick and fun random game.</p>
+
+                    </div>
+                </div>
             </div>
 
+            <div class="col-md-4 text-center">
+                <button class="btn btn-outline-info" type="button" ria-expanded="false" aria-controls="anakin" data-toggle="collapse" href="#anakin">
+                A nice SW resumé 
+              </button>
+
+                <div class="card collapse" id="anakin">
+                    <a href="./cvsite/index.html" target="_blank"><img class="card-img-top" id="anakin1" src="./images/anakin1.jpg" alt="anakin cv picture"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Anakin Skywalker, the man</h5>
+                        <p class="card-text">The man behind the mask</p>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
-
-
-
-
-
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="about.js"></script>
 </body>
 
 </html>
