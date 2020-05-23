@@ -86,8 +86,9 @@ let userName = $("#name").val();
 
 $('.wtfball').hide(0);
 
-userName ? console.log('Hello ' + userName + '!') :
-    console.log('Hello!');
+
+
+
 
 let userQuestion = "What is happening?";
 console.log(userName + " asked: " + userQuestion);
