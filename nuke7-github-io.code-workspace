@@ -6,6 +6,7 @@
 	],
 	"settings": {
 		"discord.detailsEditing": "Editing {workspace} ",
-		"discord.lowerDetailsEditing": "and {totallines} lines"
+		"discord.lowerDetailsEditing": "and {totallines} lines",
+		"liveServer.settings.port": 5501
 	}
 }
