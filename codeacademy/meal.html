@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal planner random</title>
+    <style>
+        h1,
+        p {
+            text-align: center;
+        }
+        
+        #new_meal {
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .content {
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Your meal</h1>
+        <p id="meal"></p>
+        <input type="button" id="new_meal" value="Push to get a new meal" onClick="window.location.reload()">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./meal.js"></script>
+</body>
+
+</html>
