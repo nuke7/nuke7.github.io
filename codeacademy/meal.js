@@ -56,12 +56,15 @@ const menu = {
 menu.addDishToCourse('appetizers', 'House Salad', 4);
 menu.addDishToCourse('appetizers', 'Caesar Salad', 5);
 menu.addDishToCourse('appetizers', 'Fish sticks', 6);
+menu.addDishToCourse('appetizers', 'Salted oysters', 12);
 menu.addDishToCourse('mains', 'Steak with potatoes', 8);
 menu.addDishToCourse('mains', 'Turkey breast fillet with jam', 7);
 menu.addDishToCourse('mains', 'Ravioli with lemongrass broth', 10);
+menu.addDishToCourse('mains', 'Grilled chicken breast with everything', 9);
 menu.addDishToCourse('desserts', 'Chocholate cake', 3);
 menu.addDishToCourse('desserts', 'Raspberry pie', 4);
 menu.addDishToCourse('desserts', 'Pancakes', 2);
+menu.addDishToCourse('desserts', 'House cheese plate', 5);
 
 
 let meal = menu.generateRandomMeal();
