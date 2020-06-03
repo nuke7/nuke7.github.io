@@ -1,0 +1,126 @@
+.img-wrap {
+    /*width: 45%;*/
+    height: 400px;
+    /*overflow: hidden;*/
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-I7rV_-eB1pY%2FV5Ux-deqAbI%2FAAAAAAAACiM%2F0CDFY5nGnZ8Yz0C-pWIEolfo9WXnptKEgCEw%2Fs1600%2Fanakin.png&f=1&nofb=1");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+}
+
+.content1 {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 150%;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+h1 {
+    margin-right: 10px;
+}
+
+h3 {
+    font-family: 'Merriweather', cursive;
+    font-size: 16px !important;
+    /*margin-top: 0px;*/
+}
+
+h2 {
+    font-size: 16px !important;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 0px;
+}
+
+#img-rule,
+#img-faith,
+#img-master {
+    width: 120%;
+    border-radius: 5px;
+}
+
+.ui-dialog-titlebar {
+    background-color: whitesmoke;
+    width: 120%;
+    border-radius: 5%;
+    text-align: center;
+}
+
+blockquote::before {
+    content: '\201C';
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+blockquote {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    color: white;
+    /*max-width: 500px;
+    width: 90%;*/
+    background-color: #222;
+    margin: auto;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    /*padding: 10px;*/
+    position: relative;
+    /*right: 1%;*/
+    /*border-left: 10px solid #222;*/
+    /*text-align: center;*/
+    box-sizing: border-box;
+    /*line-height: 1.5em;*/
+}
+
+blockquote:hover {
+    /*color: #222;*/
+    background-color: pink;
+    cursor: pointer;
+}
+
+blockquote:active {
+    color: #222;
+}
+
+.nav a,
+.title a {
+    text-decoration: none;
+    color: #71bfbd !important;
+    transition: color .4s !important;
+}
+
+a:visited {
+    color: rgb(110, 33, 161) !important;
+}
+
+a:hover {
+    transition: color .5s !important;
+    color: #d7f4ff !important;
+}
+
+a:active {
+    transition: color .3s !important;
+    color: #0c5ea5 !important;
+}
+
+.achievement,
+.experience {
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
