@@ -1,0 +1,47 @@
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.blue {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: violet;
+}
+
+img {
+    width: 250px;
+    display: block;
+}
+
+.first-subtitle {
+    background-color: rgb(13, 180, 116);
+}
+
+.second-subtitle {
+    background-color: tomato;
+}
+
+.third-subtitle {
+    background-color: skyblue;
+}
+
+.pattern {
+    background-image: url("./images/pattern.jpeg");
+}
