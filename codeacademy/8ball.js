@@ -1,7 +1,7 @@
+//magic 8ball itt kezdődik....
+
 let userName = $("#name").val();
 
-userName ? console.log('Hello ' + userName + '!') :
-    console.log('Hello!');
 
 let userQuestion = "What is happening?";
 console.log(userName + " asked: " + userQuestion);

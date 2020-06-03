@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=yes">
     <title>Meal planner random</title>
     <style>
         h1,
@@ -17,7 +17,7 @@
         }
         
         .content {
-            width: 400px;
+            max-width: 400px;
             margin: auto;
         }
     </style>
@@ -27,7 +27,7 @@
     <div class="content">
         <h1>Your meal</h1>
         <p id="meal"></p>
-        <input type="button" id="new_meal" value="Push to get a new meal" onClick="window.location.reload()">
+        <input type="button" id="new_meal" value="Push to get a new meal" onclick="window.location.reload()">
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./meal.js"></script>
