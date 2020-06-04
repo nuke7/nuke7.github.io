@@ -99,12 +99,12 @@ blockquote:active {
 .nav a,
 .title a {
     text-decoration: none;
-    color: #71bfbd !important;
+    color: rgb(144, 176, 202) !important;
     transition: color .4s !important;
 }
 
 a:visited {
-    color: rgb(110, 33, 161) !important;
+    color: rgb(164, 93, 211) !important;
 }
 
 a:hover {
