@@ -16,9 +16,9 @@
     font-size: 40px;
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (orientation: portrait) {
     .navbar-toggler {
-        height: 60px;
+        height: 70px;
     }
 }
 
