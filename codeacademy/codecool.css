@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.first-title {
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+.second-title {
+    background-color: skyblue;
+    color: whitesmoke;
+}
+
+.third-title {
+    background-color: gray;
+    color: skyblue;
+}
+
+a {
+    -webkit-transition: color .4s;
+    transition: color .4s;
+    color: #265C83;
+}
+
+button {
+    margin-top: 30px;
+}
+
+a:link,
+a:visited {
+    color: #265C83;
+}
+
+a:hover {
+    color: #7FDBFF;
+    text-decoration: none;
+}
+
+a:active {
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    color: #007BE6;
+}
+
+p {
+    max-width: 600px;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
