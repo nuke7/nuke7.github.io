@@ -296,4 +296,13 @@ blockquote:active {
     color: #222;
 }
 
+#back1:hover {
+    box-shadow: 5px 5px 15px gray;
+    /*background-color: rgb(146, 202, 255);*/
+}
+
+#back1:active {
+    box-shadow: none;
+}
+
 ;
