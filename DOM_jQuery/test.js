@@ -14,8 +14,8 @@ let additionalBlock = {
 };
 
 $('body').append(
-    '<h1>' + additionalBlock.title + '</h1>',
-    '<p>' + additionalBlock.text + '</p>',
+    '<div><h1>' + additionalBlock.title + '</h1>',
+    '<p>' + additionalBlock.text + '</p></div>',
 );
 
 let clicked = () => {
@@ -31,7 +31,7 @@ let clicked2 = () => {
 
 $("#reset").click(clicked2);
 
-let change = () => {
+let change = function() {
     $('button').css('background-color', 'lightgreen');
     $('button').css('color', 'purple');
     $('button').css('border-radius', '15%');
