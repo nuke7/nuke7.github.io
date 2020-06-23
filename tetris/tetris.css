@@ -6,12 +6,73 @@
     flex-wrap: wrap;
 }
 
+.start-score {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 340px;
+}
+
 .grid div {
     height: 20px;
     width: 20px;
     /*background-color: green;*/
 }
 
-.tetromino {
-    background-color: rgb(255, 208, 208);
+.mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(27, 62, 63);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+}
+
+.right-arrow {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.left-arrow {
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 45px;
+}
+
+.rotate-arrow {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.controls {
+    width: 400px;
+    margin: auto;
+}
+
+.tetromino1 {
+    background-color: rgb(241, 210, 168);
+}
+
+.tetromino2 {
+    background-color: rgb(241, 232, 101);
+}
+
+.tetromino3 {
+    background-color: rgb(230, 184, 184);
+}
+
+.tetromino4 {
+    background-color: rgb(176, 218, 166);
 }
