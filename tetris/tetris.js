@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     let squares = Array.from(document.querySelectorAll('.grid div'));
-    const ScoreDisplay = document.querySelector('#score');
-    const StarBtn = document.querySelector('#start-button');
+    const scoreDisplay = document.querySelector('#score');
+    const startBtn = document.querySelector('#start-button');
     const width = 10;
     let nextRandom = 0;
+    let timerId;
+    let score = 0;
     var classes = ["tetromino1", "tetromino2", "tetromino3", "tetromino4"];
 
 
@@ -74,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //console.log(squares);
 
     //movement timer
-    timerId = setInterval(moveDown, 900);
+    //timerId = setInterval(moveDown, 900);
 
     //controlling with keycode
 
@@ -115,6 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
             currentPosition = 3;
             draw();
             displayShape();
+            addScore();
+            gameOver();
         }
     };
 
@@ -154,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function checkRotatedPosition(P) {
-        P = P || currentPosition; //get current position.  Then, check if the piece is near the left side.
+        P = currentPosition; //get current position.  Then, check if the piece is near the left side.
         if ((P + 1) % width < 4) { //add 1 because the position index can be 1 less than where the piece is (with how they are indexed).     
             if (isAtRight()) { //use actual position to check if it's flipped over to right side
                 currentPosition += 1; //if so, add one to wrap it back around
@@ -208,5 +212,86 @@ document.addEventListener('DOMContentLoaded', () => {
     $('#left-arrow').click(moveLeft);
     $('#right-arrow').click(moveRight);
     $('#rotate-arrow').click(rotation);
+
+    //start button functionality
+
+    $("#start-button").click(function() {
+        if (timerId) {
+            clearInterval(timerId);
+            timerId = null;
+        } else {
+            draw();
+            timerId = setInterval(moveDown, 850);
+            nextRandom = Math.floor(Math.random() * theTetrominoes.length);
+            displayShape();
+        }
+    });
+
+    $("#easy").click(function() {
+        if (timerId) {
+            clearInterval(timerId);
+            timerId = null;
+        } else {
+            draw();
+            timerId = setInterval(moveDown, 1100);
+            nextRandom = Math.floor(Math.random() * theTetrominoes.length);
+            displayShape();
+        }
+    });
+
+    $("#hard").click(function() {
+        if (timerId) {
+            clearInterval(timerId);
+            timerId = null;
+        } else {
+            draw();
+            timerId = setInterval(moveDown, 450);
+            nextRandom = Math.floor(Math.random() * theTetrominoes.length);
+            displayShape();
+        }
+    });
+
+    $("#normal").click(function() {
+        if (timerId) {
+            clearInterval(timerId);
+            timerId = null;
+        } else {
+            draw();
+            timerId = setInterval(moveDown, 850);
+            nextRandom = Math.floor(Math.random() * theTetrominoes.length);
+            displayShape();
+        }
+    });
+
+    function addScore() {
+        for (let i = 0; i < 199; i += width) {
+            const row = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8, i + 9]
+
+            if (row.every(index => squares[index].classList.contains('taken'))) {
+                score += 10;
+                scoreDisplay.innerHTML = score;
+                row.forEach(index => {
+                    squares[index].classList.remove('taken');
+                    squares[index].classList.remove('tetromino1', 'tetromino2', 'tetromino3', 'tetromino4');
+                });
+                const squaresRemoved = squares.splice(i, width);
+                squares = squaresRemoved.concat(squares);
+                squares.forEach(cell => grid.appendChild(cell));
+
+            }
+        }
+    };
+
+    //game over function
+
+    function gameOver() {
+        if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
+            scoreDisplay.innerHTML = 'end';
+            clearInterval(timerId);
+        }
+    };
+
+
+
 
 })

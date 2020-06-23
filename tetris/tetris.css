@@ -6,6 +6,17 @@
     flex-wrap: wrap;
 }
 
+.difficulty {
+    width: 450px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+button {
+    padding: 5px;
+    margin-right: 15px;
+}
+
 .start-score {
     width: 200px;
     margin: auto;
