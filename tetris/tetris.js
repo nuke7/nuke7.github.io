@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var classes = ["tetromino1", "tetromino2", "tetromino3", "tetromino4"];
     var sound = document.getElementById("tetris-ost");
     sound.loop = true;
+    sound.volume = 0.5;
+
 
 
 
