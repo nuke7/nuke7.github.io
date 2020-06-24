@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerId;
     let score = 0;
     var classes = ["tetromino1", "tetromino2", "tetromino3", "tetromino4"];
-
+    var sound = document.getElementById("tetris-ost");
 
 
 
@@ -209,9 +209,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    //buttons
+
     $('#left-arrow').click(moveLeft);
     $('#right-arrow').click(moveRight);
     $('#rotate-arrow').click(rotation);
+    $('#music').click(togglePlay);
+
+    function togglePlay() {
+        return sound.paused ? sound.play() : sound.pause();
+    };
 
     //start button functionality
 
