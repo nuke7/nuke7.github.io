@@ -65,6 +65,7 @@ button {
 .rotate-arrow {
     width: 50px;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 .controls {

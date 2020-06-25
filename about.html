@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
+        .carousel-inner {
+            width: 100%;
+            max-height: 340px !important;
+        }
+        
+        .card-img-top {
+            max-height: 250px;
+        }
+        
+        .carousel-caption {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
         a {
             -webkit-transition: color .4s;
             transition: color .4s;
@@ -86,6 +99,14 @@
             height: 175px;
         }
         
+        #tetris1:hover {
+            height: 90%;
+        }
+        
+        #tetris1 {
+            height: 75%;
+        }
+        
         #anakin {
             margin-bottom: 20px;
         }
@@ -111,7 +132,7 @@
         </div>
         <h3 class="collapse" id="jack">this the story of <a href="https://youtu.be/GI6CfKcMhjY">Captain Jack Sparrow</a></h3>
 
-        <div id="carousel1" class="carousel slide  w-75 p-3 mx-auto" data-ride="carousel">
+        <div id="carousel1" class="carousel slide w-75 p-3 mx-auto" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel1" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel1" data-slide-to="1"></li>
@@ -120,6 +141,10 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/hoth1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./images/hoth2.jpg" class="d-block w-100" alt="...">
@@ -140,12 +165,12 @@
 
 
         <div class="row">
-            <div class="col-md-4 text-center">
-                <button class="btn btn-outline-info" aria-expanded="false" aria-controls="seedSpecial" data-toggle="collapse" href="#seedSpecial">
+            <div class="col-md-3 text-center">
+                <button class="btn btn-outline-info" data-toggle="collapse" href="#choreDoor">
                 Fun Guessing Game
               </button>
 
-                <div class="card collapse border-0" id="seedSpecial">
+                <div class="card collapse border-0" id="choreDoor">
                     <a href="./codeacademy/choreDoor.html" target="_blank"><img class="card-img-top" id="door1" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" alt="closed door image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Chore Door Bot Game</h5>
@@ -154,8 +179,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
-                <button class="btn btn-outline-info" type="button" ria-expanded="false" aria-controls="rock" data-toggle="collapse" href="#rock">
+            <div class="col-md-3 text-center">
+                <button class="btn btn-outline-info" type="button" data-toggle="collapse" href="#rock">
                 Rock, paper, scissors 
               </button>
 
@@ -169,8 +194,8 @@
                 </div>
             </div>
 
-            <div class="col-md-4 text-center">
-                <button class="btn btn-outline-info" id="resumé" type="button" ria-expanded="false" aria-controls="anakin" data-toggle="collapse" href="#anakin">
+            <div class="col-md-3 text-center">
+                <button class="btn btn-outline-info" id="resumé" type="button" data-toggle="collapse" href="#anakin">
                 A nice SW resumé 
               </button>
 
@@ -179,6 +204,21 @@
                     <div class="card-body">
                         <h5 class="card-title">Anakin Skywalker, the man</h5>
                         <p class="card-text">The man behind the mask</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <button class="btn btn-outline-info" id="tetris-card" type="button" data-toggle="collapse" href="#tetris">
+                A colorful tetris game 
+              </button>
+
+                <div class="card collapse border-0" id="tetris">
+                    <a href="./tetris/index.html" target="_blank"><img class="card-img-top" id="tetris1" src="./tetris/tetris2.png" alt="a tetris block"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Tetris</h5>
+                        <p class="card-text">A basic, colorful tetris game with music</p>
 
                     </div>
                 </div>
