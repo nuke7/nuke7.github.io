@@ -91,6 +91,7 @@ function undraw() {
 
 //event listener for keys and controlling the shapes
 function control(event) {
+  if (timerId != null) {
     if (event.keyCode === 37) {
         moveLeft();
     } else if (event.keyCode === 38) {
@@ -100,6 +101,7 @@ function control(event) {
     } else if (event.keyCode === 40) {
         moveDown();
     }
+  }
 };
 
 document.addEventListener('keydown', control);
@@ -262,7 +264,7 @@ $("#hard").click(function() {
         timerId = null;
     } else {
         draw();
-        timerId = setInterval(moveDown, 450);
+        timerId = setInterval(moveDown, 250);
         nextRandom = Math.floor(Math.random() * theTetrominoes.length);
         displayShape();
     }
@@ -274,7 +276,7 @@ $("#normal").click(function() {
         timerId = null;
     } else {
         draw();
-        timerId = setInterval(moveDown, 850);
+        timerId = setInterval(moveDown, 650);
         nextRandom = Math.floor(Math.random() * theTetrominoes.length);
         displayShape();
     }
