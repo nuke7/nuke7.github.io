@@ -223,9 +223,18 @@ function displayShape() {
 
 //buttons
 
-$('#left-arrow').click(moveLeft);
-$('#right-arrow').click(moveRight);
-$('#rotate-arrow').click(rotation);
+$('#left-arrow').click(function() {
+    if (timerId != null) {
+        moveLeft}
+    });
+$('#right-arrow').click(function() {
+    if (timerId != null) {
+        moveRight}
+    });;
+$('#rotate-arrow').click(function() {
+    if (timerId != null) {
+        rotation}
+    });;
 $('#music').click(togglePlay);
 
 function togglePlay() {
